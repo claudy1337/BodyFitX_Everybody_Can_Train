@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BodyFitX</string>
+
+
+    <string name="GetStarted">Начать</string>
+
+
+    <string name="track_text">Отслеживай цель</string>
+    <string name="track_title">Не беспокойся, если у тебя возникли проблемы с определением целей. Мы можем помочь тебе определить цель и отслеживать ее</string>
+
+    <string name="training_text">Полезные тренировки</string>
+    <string name="training_title">Достигни своих целей, занимайся полезными тренировками когда тебе удобно. Cовмести приятное с полезным</string>
+
+    <string name="nutrition_text">Питайся правильно</string>
+    <string name="nutrition_title">Давай начнем здоровый образ жизни. Вместе с нами, ты можешь определить свой рацион на каждый день. Здоровое питание это весело</string>
+
+    <string name="sleep_text">Сон это важно</string>
+    <string name="sleep_title">Улучшай качество своего сна вместе с нами, качественный сон может принести хорошее настроение по утрам</string>
+
+
+    <string name="welcomePreview">Привет YuopYamm</string>
+    <string name="welcome_title">Теперь у тебя все готово, пора достигнуть своих целей </string>
+
+    <string name="Welcome">Добро Пожаловать</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="authenticate_account">Войти в аккаунт</string>
+    <string name="forgot_password">Восстановить пароль</string>
+
+    <string name="Nick">YuopYamm</string>
+
+    <string name="AlreadyAcc">У вас уже есть учетная запись? Авторизоваться</string>
+    <string name="DntReadyAcc">У вас нету учетной записи? Зарегистрироваться</string>
+
+
+</resources>

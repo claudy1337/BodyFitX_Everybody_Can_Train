@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.OnboardingActivity">
+
+
+    <ImageView
+        android:id="@+id/onboarding_Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Onboarding_Header_Text"
+        android:textColor="#1D1617"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/Preview_Header_Text"
+        app:layout_constraintBottom_toTopOf="@+id/Onboarding_Low_Text"
+        app:layout_constraintStart_toStartOf="@+id/Onboarding_Low_Text"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_Image" />
+
+    <TextView
+        android:id="@+id/Onboarding_Low_Text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        style="@style/Preview_Low_Text"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="@+id/fab"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_Image"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_Image" />
+
+    <ProgressBar
+        android:id="@+id/progressBarItem"
+        android:layout_width="95dp"
+        android:max="100"
+        android:progress="10"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_height="95dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="65dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBarItem"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/arrow_right_20"
+        app:maxImageSize="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
