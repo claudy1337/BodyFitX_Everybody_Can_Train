@@ -18,31 +18,35 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/oricon"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/Create_Logining_Text"
+        app:layout_constraintStart_toStartOf="@+id/Create_Logining_Text"
+        android:layout_marginBottom="10dp"/>
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@drawable/googleauth"
+        android:src="@drawable/google_auth_icon"
         app:layout_constraintBottom_toTopOf="@+id/Create_Logining_Text"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+        app:layout_constraintEnd_toEndOf="@+id/Create_Logining_Text"
+        app:layout_constraintStart_toStartOf="@+id/Create_Logining_Text" />
 
     <TextView
         android:id="@+id/Create_Logining_Text"
-        style="@style/Preview_Low_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/AlreadyAcc"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton" />
+        app:layout_constraintEnd_toEndOf="@+id/constrainting"
+        app:layout_constraintStart_toStartOf="@+id/constrainting"
+        android:layout_marginBottom="10dp"
+        style="@style/Preview_Low_Text"
+        android:textSize="13dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

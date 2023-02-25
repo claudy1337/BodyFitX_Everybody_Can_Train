@@ -10,7 +10,6 @@
         android:layout_marginTop="35dp"
         android:id="@+id/textView3"
         style="@style/Preview_Low_Text"
-        android:textSize="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Welcome"
@@ -25,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/create_account"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -149,18 +149,21 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
+        style="@style/Preview_Low_Text"
+        android:textSize="12dp"
         android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
+        android:layout_width="356dp"
         android:layout_height="wrap_content"
-        android:text="dfsdfsfd"
+        android:text="@string/PrivacyPolicy"
         app:layout_constraintStart_toStartOf="@+id/outlined_text_input_layout"
         app:layout_constraintTop_toBottomOf="@+id/outlined_text_input_layout" />
 
     <Button
+        android:id="@+id/loginBtn"
         style="@style/ButtonDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/default_button"
         android:text="Бляб ля"

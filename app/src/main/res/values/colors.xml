@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="header_text">#1D1617</color>
+
     <color name="linear">#97B4FE</color>
     <color name="linear_center">#97B4FE</color>
     <color name="linear_end">#97B4FE</color>

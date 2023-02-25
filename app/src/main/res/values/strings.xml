@@ -31,5 +31,8 @@
     <string name="AlreadyAcc">У вас уже есть учетная запись? Авторизоваться</string>
     <string name="DntReadyAcc">У вас нету учетной записи? Зарегистрироваться</string>
 
+    <string name="PrivacyPolicy">Продолжая, вы принимаете нашу Политику конфиденциальности и условия использования</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

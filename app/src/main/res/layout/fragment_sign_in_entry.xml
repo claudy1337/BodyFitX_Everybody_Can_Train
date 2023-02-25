@@ -7,6 +7,7 @@
     tools:context=".fragments.SignInEntryFragment">
 
     <TextView
+        android:layout_marginTop="35dp"
         android:id="@+id/textView"
         style="@style/Preview_Low_Text"
         android:layout_width="wrap_content"
@@ -19,6 +20,7 @@
 
     <TextView
         android:id="@+id/textView4"
+        android:layout_marginTop="5dp"
         style="@style/Preview_Header_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -108,5 +110,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/lat_name_layout"
         app:layout_constraintStart_toStartOf="@+id/lat_name_layout"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

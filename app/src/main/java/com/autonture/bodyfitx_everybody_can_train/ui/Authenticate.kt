@@ -14,8 +14,8 @@ class Authenticate : AppCompatActivity() {
 
     private var index = 0
     private val account_status_fragment = arrayOf(
-        DataEntryFragment(),
-        SignInEntryFragment()
+        DataEntryFragment.newInstance(),
+        SignInEntryFragment.newInstance()
     )
     private val account_status_text = arrayOf(
         R.string.AlreadyAcc,
@@ -24,20 +24,20 @@ class Authenticate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_authenticate)
-            setStatusAccount(index)
-        Create_Logining_Text.setOnClickListener {
-            setStatusAccount(index)
-
+        setStatusAccount(index)
+        thread {
+            Create_Logining_Text.setOnClickListener {
+                setStatusAccount(index)
+            }
         }
+
     }
     private fun setStatusAccount(actCount: Int) {
             if(actCount <= account_status_fragment.count()){
-                thread {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.constrainting, account_status_fragment[index])
-                        .commit()
-                }
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.constrainting, account_status_fragment[index])
+                    .commit()
                 Create_Logining_Text.setText(account_status_text[index])
                 index = (index + 1) % account_status_fragment.size
             }
