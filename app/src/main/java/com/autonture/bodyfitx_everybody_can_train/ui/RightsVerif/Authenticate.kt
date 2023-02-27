@@ -1,4 +1,4 @@
-package com.autonture.bodyfitx_everybody_can_train.ui
+package com.autonture.bodyfitx_everybody_can_train.ui.RightsVerif
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,20 +6,20 @@ import android.os.Bundle
 import com.autonture.bodyfitx_everybody_can_train.R
 import com.autonture.bodyfitx_everybody_can_train.fragments.DataEntryFragment
 import com.autonture.bodyfitx_everybody_can_train.fragments.SignInEntryFragment
+import com.autonture.bodyfitx_everybody_can_train.ui.Onboarding.OnboardingActivity
 import kotlinx.android.synthetic.main.activity_authenticate.*
-import kotlinx.android.synthetic.main.activity_onboarding.*
 import kotlin.concurrent.thread
 
 class Authenticate : AppCompatActivity() {
 
     private var index = 0
     private val account_status_fragment = arrayOf(
-        DataEntryFragment.newInstance(),
-        SignInEntryFragment.newInstance()
+        SignInEntryFragment.newInstance(),
+        DataEntryFragment.newInstance()
     )
     private val account_status_text = arrayOf(
-        R.string.AlreadyAcc,
-        R.string.DntReadyAcc
+        R.string.DntReadyAcc,
+        R.string.AlreadyAcc
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +29,10 @@ class Authenticate : AppCompatActivity() {
             Create_Logining_Text.setOnClickListener {
                 setStatusAccount(index)
             }
+        }
+        google_button.setOnClickListener {
+            val intent = Intent(this, ClockData::class.java)
+            startActivity(intent)
         }
 
     }

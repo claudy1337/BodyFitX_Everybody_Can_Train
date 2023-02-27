@@ -96,12 +96,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forgot_password"
-        android:textSize="15dp"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/lat_name_layout"
         app:layout_constraintStart_toStartOf="@+id/lat_name_layout"
         app:layout_constraintTop_toBottomOf="@+id/lat_name_layout" />
 
     <Button
+        android:id="@+id/btnStart"
         style="@style/ButtonDefault"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

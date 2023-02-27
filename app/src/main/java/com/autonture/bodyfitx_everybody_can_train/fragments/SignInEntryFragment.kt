@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.autonture.bodyfitx_everybody_can_train.R
+import kotlinx.android.synthetic.main.fragment_sign_in_entry.*
 
 
 class SignInEntryFragment : Fragment() {
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,10 +19,13 @@ class SignInEntryFragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_sign_in_entry, container, false)
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    //override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+      //  super.onViewCreated(view, savedInstanceState)
+        //val controller = findNavController()
+       // btnStart.setOnClickListener { controller.navigate(R.id.clockData) }
 
-    }
+   // }
+
     companion object {
         @JvmStatic
         fun newInstance() = SignInEntryFragment()

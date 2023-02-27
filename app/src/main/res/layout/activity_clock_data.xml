@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ClockData">
+    tools:context=".ui.RightsVerif.ClockData">
 
     <ImageView
         android:layout_marginTop="70dp"
@@ -42,7 +42,7 @@
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/begin_clock_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ButtonDefault"

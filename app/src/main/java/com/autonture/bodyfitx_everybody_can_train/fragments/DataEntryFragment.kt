@@ -1,16 +1,11 @@
 package com.autonture.bodyfitx_everybody_can_train.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.autonture.bodyfitx_everybody_can_train.R
-import com.autonture.bodyfitx_everybody_can_train.ui.Authenticate
-import com.autonture.bodyfitx_everybody_can_train.ui.OnboardingActivity
-import kotlinx.android.synthetic.main.fragment_data_entry.*
 
 
 class DataEntryFragment : Fragment() {

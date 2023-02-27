@@ -1,9 +1,10 @@
-package com.autonture.bodyfitx_everybody_can_train.ui
+package com.autonture.bodyfitx_everybody_can_train.ui.Onboarding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.autonture.bodyfitx_everybody_can_train.R
+import com.autonture.bodyfitx_everybody_can_train.ui.RightsVerif.Authenticate
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
 class OnboardingActivity : AppCompatActivity() {

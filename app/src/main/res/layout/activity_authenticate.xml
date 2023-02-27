@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Authenticate">
+    tools:context=".ui.RightsVerif.Authenticate">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" >
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -21,14 +22,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/oricon"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/google_button"
         app:layout_constraintEnd_toEndOf="@+id/Create_Logining_Text"
         app:layout_constraintStart_toStartOf="@+id/Create_Logining_Text"
         android:layout_marginBottom="10dp"/>
 
     <ImageButton
         android:layout_marginBottom="10dp"
-        android:id="@+id/imageButton2"
+        android:id="@+id/google_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"

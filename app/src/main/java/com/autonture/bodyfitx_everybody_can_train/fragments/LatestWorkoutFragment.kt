@@ -1,10 +1,11 @@
-package com.autonture.bodyfitx_everybody_can_train
+package com.autonture.bodyfitx_everybody_can_train.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.autonture.bodyfitx_everybody_can_train.R
 
 class LatestWorkoutFragment : Fragment() {
 
