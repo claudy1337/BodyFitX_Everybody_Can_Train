@@ -4,9 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.autonture.bodyfitx_everybody_can_train.R
-import com.autonture.bodyfitx_everybody_can_train.fragments.DataEntryFragment
-import com.autonture.bodyfitx_everybody_can_train.fragments.SignInEntryFragment
-import com.autonture.bodyfitx_everybody_can_train.ui.Onboarding.OnboardingActivity
 import kotlinx.android.synthetic.main.activity_authenticate.*
 import kotlin.concurrent.thread
 

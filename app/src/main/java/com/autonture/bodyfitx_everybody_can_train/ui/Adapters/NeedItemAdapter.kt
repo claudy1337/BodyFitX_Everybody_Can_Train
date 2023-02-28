@@ -1,4 +1,4 @@
-package com.autonture.bodyfitx_everybody_can_train
+package com.autonture.bodyfitx_everybody_can_train.ui.Adapters
 
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
@@ -6,6 +6,7 @@ import  android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.autonture.bodyfitx_everybody_can_train.R
 
 class NeedItemAdapter(val posts:ArrayList<String>) : RecyclerView.Adapter<NeedItemAdapter.ViewHolder>() {
 

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/signInEntryFragment"
-        android:name="com.autonture.bodyfitx_everybody_can_train.fragments.SignInEntryFragment"
+        android:name="com.autonture.bodyfitx_everybody_can_train.ui.RightsVerif.SignInEntryFragment"
         android:label="fragment_sign_in_entry"
         tools:layout="@layout/fragment_sign_in_entry" >
         <action
