@@ -18,7 +18,7 @@ class NeedItemAdapter(val posts:ArrayList<String>) : RecyclerView.Adapter<NeedIt
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.need_items.setImageResource(R.drawable.barbel_item)
-        holder.need_texts.text =  "Гантели"
+        holder.need_texts.text = "Гантели"
     }
 
     override fun getItemCount() = posts.size

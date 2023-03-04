@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.autonture.bodyfitx_everybody_can_train.R
+import com.autonture.bodyfitx_everybody_can_train.ui.Onboarding.TrainingSessionsActivity
 import kotlinx.android.synthetic.main.activity_authenticate.*
 import kotlin.concurrent.thread
 
@@ -28,7 +29,7 @@ class Authenticate : AppCompatActivity() {
             }
         }
         google_button.setOnClickListener {
-            val intent = Intent(this, ClockData::class.java)
+            val intent = Intent(this, TrainingSessionsActivity::class.java)
             startActivity(intent)
         }
 

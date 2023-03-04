@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.autonture.bodyfitx_everybody_can_train.R
 import com.autonture.bodyfitx_everybody_can_train.ui.Onboarding.OnboardingActivity
+import com.autonture.bodyfitx_everybody_can_train.ui.Onboarding.TrainingSessionsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         btnGetStarted.setOnClickListener {
             val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent)
-
         }
     }
 }

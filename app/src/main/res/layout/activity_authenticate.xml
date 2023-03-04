@@ -25,10 +25,10 @@
         app:layout_constraintBottom_toTopOf="@+id/google_button"
         app:layout_constraintEnd_toEndOf="@+id/Create_Logining_Text"
         app:layout_constraintStart_toStartOf="@+id/Create_Logining_Text"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="15dp"/>
 
     <ImageButton
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="15dp"
         android:id="@+id/google_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,8 +46,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/constrainting"
         app:layout_constraintStart_toStartOf="@+id/constrainting"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="15dp"
         style="@style/Preview_Low_Text"
-        android:textSize="13dp"/>
+        android:textSize="15dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

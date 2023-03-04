@@ -7,37 +7,34 @@
     tools:context=".TaskActivity">
 
 
-
-
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        android:src="@drawable/video_players"
+        android:src="@drawable/workout_video_group_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/close_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:background="@android:color/transparent"/>
+        android:src="@drawable/love_off_icon"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
     <TextView
         android:id="@+id/textView9"
+        style="@style/Preview_Header_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="@string/Workout_Name"
         android:textSize="20dp"
-        android:layout_margin="20dp"
-        style="@style/Preview_Header_Text"
         app:layout_constraintStart_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
@@ -52,17 +49,39 @@
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:id="@+id/textView12"
+        style="@style/Preview_Header_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Description"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        style="@style/Preview_Low_Text"
+        android:layout_width="372dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/track_title"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
     <ProgressBar
         android:id="@+id/progressBarItem"
         style="@style/CircularPurpleDeterminateProgressBar"
-        android:layout_width="310dp"
-        android:layout_height="310dp"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
         android:max="100"
         android:progress="10"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
 
 
     <TextView

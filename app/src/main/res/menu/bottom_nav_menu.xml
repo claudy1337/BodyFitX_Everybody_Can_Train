@@ -3,15 +3,18 @@
     <item android:id="@+id/mHome"
         android:title="Home"
         android:icon="@drawable/bottom_home_icon"/>
+
     <item android:id="@+id/mSearch"
         android:title="Search"
         android:icon="@drawable/bottom_home_icon"/>
+
     <item android:id="@+id/mplaceholder"
-        android:title=""
-        />
+        android:title=""/>
+
     <item android:id="@+id/mPerson"
         android:title="Profile"
         android:icon="@drawable/bottom_home_icon"/>
+
     <item android:id="@+id/mSetting"
         android:title="Setting"
         android:icon="@drawable/bottom_home_icon"/>

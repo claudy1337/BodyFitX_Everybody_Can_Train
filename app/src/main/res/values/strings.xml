@@ -34,12 +34,19 @@
     <string name="PrivacyPolicy">Продолжая, вы принимаете нашу Политику конфиденциальности и условия использования</string>
 
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
     <string name="Workout_Name">Название Тренировки</string>
     <string name="Workout_Info">11 Упражнений | 32 Минуты</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="Description">Описание</string>
+
+    <string name="header_select_training">Какая твоя цель?</string>
+    <string name="title_select_training">Это поможет нам выбрать лучшую программу для тебя</string>
+
+
+    <!--Card1-->
+    <string name="name_session_text">Улучшить форму</string>
+    <string name="title_session_text">У меня небольшое количество жира в организме, и мне нужно/хочу нарастить больше мышц</string>
 
 
 </resources>

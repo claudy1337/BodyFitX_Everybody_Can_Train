@@ -10,6 +10,7 @@ import com.autonture.bodyfitx_everybody_can_train.ui.Adapters.NeedItemAdapter
 import com.autonture.bodyfitx_everybody_can_train.R
 import com.autonture.bodyfitx_everybody_can_train.TaskActivity
 import com.autonture.bodyfitx_everybody_can_train.ui.Adapters.TaskItemAdapter
+import com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.MainDashboard
 import kotlinx.android.synthetic.main.activity_workout_certain.*
 
 class WorkoutCertain : AppCompatActivity(), CellClickListener {
@@ -26,6 +27,10 @@ class WorkoutCertain : AppCompatActivity(), CellClickListener {
         task_recycler_view.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         task_recycler_view.adapter = TaskItemAdapter(posts, this)
 
+        buttonStart.setOnClickListener {
+            val intent = Intent(this, MainDashboard::class.java) //WorkoutCertain
+            startActivity(intent)
+        }
     }
 
     override fun onCellClickListener() {

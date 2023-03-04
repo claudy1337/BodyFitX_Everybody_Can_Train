@@ -13,7 +13,7 @@ class ClockData : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clock_data)
         begin_clock_button.setOnClickListener {
-            val intent = Intent(this, MainDashboard::class.java) //WorkoutCertain
+            val intent = Intent(this, WorkoutCertain::class.java) //WorkoutCertain
             startActivity(intent)
         }
     }

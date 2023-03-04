@@ -151,7 +151,7 @@
 
     <CheckBox
         style="@style/Preview_Low_Text"
-        android:textSize="12dp"
+        android:textSize="15dp"
         android:id="@+id/checkBox"
         android:layout_width="356dp"
         android:layout_height="wrap_content"
