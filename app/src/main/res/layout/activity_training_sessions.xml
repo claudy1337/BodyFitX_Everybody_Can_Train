@@ -9,7 +9,7 @@
 
     <TextView
         android:textSize="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="60dp"
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         style="@style/Preview_Header_Text"/>
 
     <TextView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/textView15"
         style="@style/Preview_Low_Text"
         android:layout_width="232dp"
@@ -37,6 +37,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
         tools:listitem="@layout/session_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

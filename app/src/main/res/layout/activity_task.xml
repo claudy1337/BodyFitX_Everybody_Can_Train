@@ -10,22 +10,13 @@
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:src="@drawable/workout_video_group_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/love_off_icon"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <TextView
         android:id="@+id/textView9"

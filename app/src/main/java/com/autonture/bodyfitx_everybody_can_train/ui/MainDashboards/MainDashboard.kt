@@ -3,39 +3,54 @@ package com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.autonture.bodyfitx_everybody_can_train.R
+import com.autonture.bodyfitx_everybody_can_train.databinding.ActivityMainDashboardBinding
+import com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Home.DashboardHomeFragment
+import com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Person.DashboardProfileFragment
+import com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Search.DashboardSearchFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main_dashboard.*
 
 class MainDashboard : AppCompatActivity() {
-    val text = "Пора покормить кота!"
-    val duration = Toast.LENGTH_SHORT
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        lateinit var bottomNav : BottomNavigationView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_dashboard)
-        bottomnavigationbar.selectedItemId = R.id.mHome
-        bottomnavigationbar.setOnNavigationItemReselectedListener {
-            when(it.itemId){
-                R.id.mPerson -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.coordinator, DashboardProfileFragment())
-                        .commit()
-                }
+        loadFragment(DashboardHomeFragment())
+        bottomNav = findViewById(R.id.bottomnavigationbar) as BottomNavigationView
+        bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
                 R.id.mHome -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.coordinator, DashboardHomeFragment())
-                        .commit()
+                    loadFragment(DashboardHomeFragment())
+                    true
+                }
+                R.id.mPerson -> {
+                    loadFragment(DashboardProfileFragment())
+                    true
+                }
+                R.id.mSearch -> {
+                    loadFragment(DashboardHomeFragment())
+                    true
+                }
+
+                else -> {
+                    loadFragment(DashboardHomeFragment())
+                    true
                 }
             }
-            true
+
         }
-
-
     }
+    private  fun loadFragment(fragment: Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragmentMain,fragment)
+        transaction.commit()
+    }
+
 }

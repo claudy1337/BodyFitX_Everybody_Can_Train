@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:elevation="12dp"
         android:id="@+id/btnGetStarted"
         style="@style/ButtonDefault"
         android:layout_width="wrap_content"

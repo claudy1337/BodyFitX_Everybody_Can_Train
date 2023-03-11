@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mHome">
 
+    <fragment
+        android:id="@+id/mPerson"
+        android:name="com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Person.DashboardProfileFragment"
+        android:label="fragment_dashboard_profile"
+        tools:layout="@layout/fragment_dashboard_profile" />
+    <fragment
+        android:id="@+id/mHome"
+        android:name="com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Home.DashboardHomeFragment"
+        android:label="fragment_dashboard_home"
+        tools:layout="@layout/fragment_dashboard_home" />
+    <fragment
+        android:id="@+id/mSearch"
+        android:name="com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Search.DashboardSearchFragment"
+        android:label="fragment_dashboard_search"
+        tools:layout="@layout/fragment_dashboard_search" />
+    <fragment
+        android:id="@+id/mSetting"
+        android:name="com.autonture.bodyfitx_everybody_can_train.ui.MainDashboards.Setting.DashboardSettingFragment"
+        android:label="fragment_dashboard_setting"
+        tools:layout="@layout/fragment_dashboard_setting" />
 </navigation>

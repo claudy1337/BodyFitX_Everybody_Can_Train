@@ -8,11 +8,10 @@
     <androidx.cardview.widget.CardView
         app:cardElevation="10dp"
         android:elevation="@dimen/cardview_default_radius"
-
         android:layout_width="275dp"
         android:layout_height="478dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="@color/linear"
+        app:cardBackgroundColor="@color/linear_center"
         app:cardCornerRadius="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,9 +33,9 @@
 
             <TextView
                 style="@style/Preview_Header_Text"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/white"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:id="@+id/name_session_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,15 +53,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/name_session_card" />
 
             <TextView
-                android:textColor="@color/white"
                 android:id="@+id/title_session_card"
                 style="@style/Preview_Low_Text"
-                android:layout_width="241dp"
-                android:layout_height="96dp"
-                android:layout_marginBottom="10dp"
+                android:layout_width="249dp"
+                android:layout_height="87dp"
+                android:layout_marginBottom="4dp"
                 android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/icon_session_card"
+                app:layout_constraintHorizontal_bias="0.489"
                 app:layout_constraintStart_toStartOf="@+id/icon_session_card" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

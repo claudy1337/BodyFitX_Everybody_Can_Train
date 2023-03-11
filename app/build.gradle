@@ -39,6 +39,8 @@ android {
 
 dependencies {
 
+
+
     // Navigation Component
     def nav_version = "2.5.3"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")

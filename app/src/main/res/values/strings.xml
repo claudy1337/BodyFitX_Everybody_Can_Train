@@ -47,6 +47,7 @@
     <!--Card1-->
     <string name="name_session_text">Улучшить форму</string>
     <string name="title_session_text">У меня небольшое количество жира в организме, и мне нужно/хочу нарастить больше мышц</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
