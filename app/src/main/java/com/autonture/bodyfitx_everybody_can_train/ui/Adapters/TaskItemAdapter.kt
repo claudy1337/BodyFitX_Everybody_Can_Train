@@ -19,7 +19,7 @@ class TaskItemAdapter(val posts:ArrayList<String>, private val cellClickListener
 
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         holder.task_image_items.setImageResource(R.drawable.task_items)
-        holder.task_header_text_items.text = "Качалка говном"
+        holder.task_header_text_items.text = "Тренировка Гантелями"
         holder.task_time_text_items.text = "05:00"
         holder.itemView.setOnClickListener {
             cellClickListener.onCellClickListener()

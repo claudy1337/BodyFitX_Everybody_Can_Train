@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="14dp"
         android:fontFamily="@font/inter_semibold"
-        android:text="Качалка говном"
+        android:text="Тренировка Гантелями"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/task_image_item"
